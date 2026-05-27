@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilonos.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+
+            <h1>Contactanos</h1>
+            <h2>Tecsup@gmail.com</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="indice.html">Indice</a></li><!--
+                    --><li><a href="nosotros.html">Nosotros</a></li><!--
+                    --><li><a href="servicios.html">Servicios</a></li><!--
+                    --><li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+
+            <h1>Dejenos sus datos</h1>
+
+            <form action="" method="post">
+
+                <label for="lnombre">Nombre:</label>
+                <input type="text" name="Nombre">
+
+                
+
+                <label for="lfnac">F/Nacimiento:</label>
+                <input type="date" name="fnac">
+
+               
+
+                <label>Elija estado civil:</label>
+
+                <select name="estado" id="ecivil">
+                    <option value="S">S</option>
+                    <option value="C">C</option>
+                    <option value="V">V</option>
+                    <option value="D">D</option>
+                </select>
+                <label for="lsexo">Sexo</label>
+                <select name="sexo" id="sexo" size="2" multiple>
+                    <option value="m">Masculino</option>
+                    <option value="f">Femenino</option>
+                </select>
+                <label for="lcorreo">Correo:</label>
+                <input type="email" name="correo">
+                <label for="ltelefono">Telefono:</label>
+                <input type="tel" name="telefono">
+                <label><strong>Tipo de Planillas</strong></label>
+                <label for="prac"><input type="radio" id="prac" name="tplani" value="prac" >Practicante</label>
+                <label for="admin"><input type="radio" id="admin" name="tplani" value="admin" >Administrativo</label>
+                <label for="obre"><input type="radio" id="obre" name="tplani" value="obre" >Obrero</label>
+                <label for="gerent"><input type="radio" id="gerent" name="tplani" value="gerent" >Gerente</label>
+                <label for="mensakje">Mensaje</label>
+                <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+                <input id="boton" type="submit" value="enviar">
+            </form>
+
+        </section>
+        <footer>
+            <h6>Todos los derechos reservados</h6>
+            <img src="gato.jpg" alt="Nosotros" width="150px">
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding: 0;
+}
+
+    h1{
+        color: red;
+    }
+    h3{
+        color: blue;
+    }
+    body{
+        background-color: aquamarine;
+    }
+    h2{
+        color: brown;
+    }
+    p{
+        color: blue;
+    }
+    li{
+        color: rgb(12, 152, 19);
+    }
+    h4{
+        color: rgb(14, 32, 237);
+    }
