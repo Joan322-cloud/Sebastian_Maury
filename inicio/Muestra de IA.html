@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Sebastian Maury | Portafolio</title>
+    <style>
+        /* ==========================================
+           CSS: Diseño Minimalista y Sistema de Cuadrículas
+           ========================================== */
+        
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #000000;
+            --secondary-text: #666666;
+            --border-color: #eaeaea;
+        }
+
+        /* Modo Oscuro (Controlado por JavaScript) */
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #ffffff;
+            --secondary-text: #a0a0a0;
+            --border-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header y Botón Dark Mode */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--text-color);
+        }
+
+        /* Hero Section (Presentación) */
+        .hero {
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .hero h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--secondary-text);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: var(--secondary-text);
+            font-size: 1.05rem;
+        }
+
+        /* Sección de Habilidades */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .skill-card {
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: var(--text-color);
+        }
+
+        .skill-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-color: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="logo">JSM.</div>
+            <button class="theme-toggle" id="theme-btn">Modo Oscuro</button>
+        </header>
+
+        <section class="hero">
+            <h1>Joan Sebastian Maury</h1>
+            <h2>Desarrollador Front-end & Profesional Bilingüe</h2>
+            <p>Construyendo interfaces web limpias y estructuralmente sólidas. Basado en Lima, Perú, combino mi sólido perfil en atención al cliente internacional con habilidades técnicas para crear experiencias de usuario excepcionales.</p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Estructuración semántica, accesibilidad y buenas prácticas SEO.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS3 Avanzado</h3>
+                    <p>Maquetación moderna con Flexbox, Grid y diseño Responsive.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Manipulación del DOM, interactividad y lógica de programación.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Inglés Avanzado</h3>
+                    <p>Comunicación técnica fluida. Certificación ICPNA y experiencia profesional bilingüe.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div>© 2026 Joan Sebastian Maury.</div>
+            <div>
+                <a href="#">GitHub</a> &nbsp;|&nbsp; 
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const themeBtn = document.getElementById('theme-btn');
+        const htmlElement = document.documentElement;
+
+        // Función para cambiar de tema
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                themeBtn.textContent = 'Modo Oscuro';
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeBtn.textContent = 'Modo Claro';
+            }
+        });
+    </script>
+
+</body>
+</html>
