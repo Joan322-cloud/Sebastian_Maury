@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        span{
+            color: yellowgreen;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: aquamarine; font-size:40px; align-items:center;">
+        Diseño de menus
+    </h2>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicio</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <br>
+    <br>
+    <!--Menú Lateral-->
+    <br>
+    <div style="float: left; width: 20%;">
+        <a href="#perfil">Perfil</a><br>
+        <a href="#configuracion">Configuración</a><br>
+        <a href="#salir">Salir</a>
+    </div>
+    <br>
+    <nav>
+        <a href="home.html">Inicio</a>&gt;
+        <a href="productos.html">Productos</a>&gt;
+        <span>Detalle</span>
+    </nav>
+    <br>
+    <br>
+    <div style="float: left; width: 20%;">
+        <a href="#page1">1</a>
+        <a href="#page2">2</a>
+        <a href="#page3">3</a>
+    </div>
+
+    <div>
+        <button onclick="mostrar('info')">Informacion</button>
+        <button onclick="mostrar('contacto')">Contacto</button>
+    </div>
+
+    <div id="info">Contenido de información de Julio</div>
+    <div id="contacto" style="display: none;">Contenido de Contacto de Olivares</div>
+
+    <script>
+        function mostrar(id){
+            document.getElementById('info').style.display='none';
+            document.getElementById('contacto').style.display='none';
+            document.getElementById(id).style.display='block';
+            
+        }
+    </script>
+    <br><br>
+    <div style="float: left; width: 30%; background: #9f9f9f;">Menú Lateral</div>
+    <div style="float: left; width: 70%; background: red;">Contenido Principal</div>
+    <div style="clear: both;"></div>
+    <br><br>
+    <div style="display: flex;">
+    <div style="flex: 1; background: #3bbd7c;">Menú</div>
+    <div style="flex: 3;">Contenido</div>
+    </div>
+    <br><br>
+    <!--Elementos Flotantes, Flexbox y Grid-->
+    <div style="display: grid; grid-template-columns: 1fr 3fr;">
+    <div style="background: #2f5dd0;">Menú</div>
+    <div>Contenido Principal</div>
+    </div>
+    <br><br>
+
+    <!--Ejemplo Completo de Flexbox:-->
+
+<div style="display: flex; flex-direction: row; justify-content: space-around; align-items:
+center; flex-wrap: wrap; height: 200px; border: 1px solid #333;">
+<div style="background: #ddd; padding: 20px;">Elemento 1</div>
+<div style="background: #bbb; padding: 20px; order: -1;">Elemento 2 (Orden primero)</div>
+<div style="background: #999; padding: 20px;">Elemento 3</div>
+</div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+print('Lectura de números:')
+
+
+n = int(input())
+
+
+while n != 0: # mientras sea diferente de cero, seguir leyendo nros
+    n = int(input())
+    
+print('\nPrograma terminado correctamente')
